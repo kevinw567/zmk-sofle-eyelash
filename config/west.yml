@@ -8,6 +8,8 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
+     - name: August-Arana
+       url-base: https://github.com/August-Arana
   projects:
    # - name: mario-peripheral-animation
    #   remote: gpeye
@@ -15,9 +17,9 @@ manifest:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
-      import: app/west.yml
+    - name: eyelash
+      remote: August-Arana
+      revision: main
   self:
-    path: boards
+    path: config
+    import: zmk-sofle-eyelash/config
